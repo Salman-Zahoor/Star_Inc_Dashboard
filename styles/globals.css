@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-poppins;
+}
+
+.headingPrimary {
+  @apply text-3xl font-semibold;
+}
+
+.headingsecondary {
+  @apply text-2xl font-semibold;
+}
+
+.headingTertiary {
+  @apply text-xl font-semibold;
+}
+
+.shineHover {
+  @apply before:absolute before:z-20 before:-right-full hover:before:right-full group-hover:before:right-full before:top-0 before:h-full before:w-6 before:rotate-12 before:bg-white before:blur-sm before:opacity-20 before:duration-300 opacity-90 hover:opacity-100 group-hover:opacity-100 hover:shadow-lg group-hover:shadow-lg overflow-hidden transition-all ease-out duration-150;
+}
+
+.buttonPrimary {
+  @apply relative shineHover bg-[#223575] text-colorThemeSecondary capitalize rounded-lg opacity-90 hover:opacity-100 hover:shadow-lg px-6 py-3 transition-all ease-in-out duration-200;
+}
+
+.buttonPrimaryIcon {
+  @apply relative w-8 h-8 flex items-center justify-center bg-colorTertiary text-colorThemeSecondary rounded-full before:absolute before:-right-full hover:before:right-full before:top-0 before:h-full before:w-3 before:rotate-12 before:bg-white before:blur-sm before:opacity-20 before:duration-300 opacity-90 hover:opacity-100 hover:shadow-lg overflow-hidden p-0.5 transition-all ease-out duration-150;
+}
+
+.sideBarli:hover:before{
+  content: '';
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background: #FE665C;
+    border-radius: 10px 0px 0px 10px;
+    top: 0;
+    right: 0;
+}
+.sideBarli:hover span{
+  color: #FE665C 
+}
+.sideBarli img{
+  filter: brightness(0) saturate(100%) invert(45%) sepia(8%) saturate(14%) hue-rotate(35deg) brightness(93%) contrast(84%);
+}
+.sideBarli:hover img{
+  filter: brightness(0) saturate(100%) invert(48%) sepia(13%) saturate(2522%) hue-rotate(315deg) brightness(109%) contrast(99%);
+}
+.sideBarActive{
+  @apply bg-red-100;
+}
+
+.sideBarActive:before{
+  content: '';
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  background: #FE665C !important;
+  border-radius: 10px 0px 0px 10px;
+  top: 0;
+  right: 0;
+}
+.sideBarActive span{color: #FE665C }
+.sideBarActive img{
+  filter: brightness(0) saturate(100%) invert(48%) sepia(13%) saturate(2522%) hue-rotate(315deg) brightness(109%) contrast(99%);
+}
+.muiTable{box-shadow: 0px 0px 10px rgba(0,0,0,0.2); border-radius: 10px;}
+#simple-menu .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{width: 186px; height: 167px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); border-radius: 15px; background: #FE665C; color: #fff;}
+#simple-menu .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul{padding: 20px;}
+#simple-menu .css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper ul li{display: flex; flex-direction: column; border-bottom: 1px solid #fff;}
+.box-shadow{box-shadow: 0px 0px 10px rgba(0,0,0,0.3);}
